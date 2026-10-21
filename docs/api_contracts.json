@@ -1,0 +1,19 @@
+// ENDPOINT 1: GET /api/v1/courier/manifest/today
+// Response HTTP 200 (Success):
+[
+  {
+    "order_id": "ORD-2026-8801",
+    "tracking_number": "EXP-90021-JKT",
+    "recipient_name": "Ibu Ratna Dewi",
+    "recipient_phone": "081234567890",
+    "destination_address": "Jl. Melati Raya No. 45, Harjamukti, Cirebon",
+    "cod_amount": 125000.0,
+    "status": "PENDING"
+  }
+]
+// ENDPOINT 2: POST /api/v1/courier/deliveries/{order_id}/status?status=DELIVERED
+// Response HTTP 200 (Success):
+{
+  "success": true,
+  "message": "Status pengiriman berhasil diperbarui ke server pusat."
+}
